@@ -172,3 +172,7 @@ a:hover {
 button:hover {
   color:#FF4500;
 }
+
+button {
+  background-color:#4682B4;
+}
