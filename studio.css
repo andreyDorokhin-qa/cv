@@ -1,30 +1,30 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #696969;
-    --text: #8B008B;
-    --subtext: ##FFFFFF;
-    --linktext: #cb782f;
-    --underline: #444444;
-    --sectionbg: #1c1c1e;
-    --buttoncolor: #4682B4;
+    --text: #FF4500;
+    --subtext: #FF4500;
+    --linktext: #FF4500;
+    --underline: #FF4500;
+    --sectionbg: #FF4500;
+    --buttoncolor: #FF4500;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f5f5f5;
-    --text: #4682B4;
-    --subtext: #8f8f8f;
-    --linktext: #cb782f;
-    --underline: #dadada;
-    --sectionbg: #ffffff;
-    --buttoncolor: #4682B4;
+    --text: #FF4500;
+    --subtext: #FF4500;
+    --linktext: #FF4500;
+    --underline: #FF4500;
+    --sectionbg: #FF4500;
+    --buttoncolor: #FF4500;
   }
 }
 
 body {
   font-family: "Helvetica";
-  background-color: var(--bg);
+  background-image: url("library.png");
   color: var(--text);
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ body {
   background: var(--sectionbg);
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: raw;
   align-items: flex-start;
   padding: 20px 20px 10px;
   gap: 10px;
@@ -85,7 +85,7 @@ body {
 .links__link,
 .links__title {
   font-size: 14px;
-  font-size: 1.4;
+  font-size: 2px;
 }
 
 .links__link {
@@ -123,7 +123,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  width: 320px;
+  width: 420px;
   background: var(--linktext);
   border-radius: 20px;
   border: none;
@@ -147,20 +147,28 @@ footer {
 }
 
 .photo:hover {
-  border: 3px solid #8B008B;
+  border: 3px solid #FF4500;
 }
 
 a {
   display: block;
   text-decoration:none;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.0em;
   position: relative;
 }
 
+a:active {
+  color:#FF4500;
+}
+
+a:visited {
+  color:#FF4500;
+}
+
 a:hover {
-  color:#20B2AA;
+  color:#00008B;
 }
 
 button:hover {
-  color:#20B2AA;
+  color:#FF4500;
 }
