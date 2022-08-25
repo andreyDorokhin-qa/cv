@@ -176,3 +176,27 @@ button:hover {
 button {
   background-color:#4682B4;
 }
+
+@media screen and (max-width: 1366px) {
+  .contain {
+max-width: 1140px;
+ }
+}
+
+@media screen and (max-width: 1199px) {
+  .contain {
+max-width: 970px;
+ }
+}
+
+@media screen and (max-width: 991px) {
+  .contain {
+max-width: 750px;
+ }
+}
+
+@media screen and (max-width: 767px) {
+  .contain {
+max-width: 600px;
+ }
+}
